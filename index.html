@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CANDY</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      color: white;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: right;
+      z-index: 0;
+      opacity: 0.9;
+    }
+
+    .logo {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .logo-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e60073, #6600cc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      margin-right: 15px;
+    }
+
+    .logo-text {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 28px;
+      margin-bottom: 40px;
+      line-height: 1.4;
+    }
+
+    .start-button {
+      padding: 15px 40px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(to right, #e60073, #0033cc);
+      color: white;
+      border-radius: 40px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .start-button:hover {
+      transform: scale(1.05);
+    }
+
+    .start-button::before {
+      content: " ";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      right: 3px;
+      bottom: 3px;
+      background-color: black;
+      border-radius: 35px;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <!-- Logo in top-left corner -->
+  <div class="logo">
+    <div class="logo-circle">C</div>
+    <div class="logo-text">CANDY</div>
+  </div>
+
+  <!-- Centered content -->
+  <div class="content">
+    <h1>CANDY</h1>
+    <p>MAKE YOUR LIFE EASY AND SWEET.</p>
+    <button class="start-button">START</button>
+  </div>
+  <video auto loop class="back-video">
+     <source src="c:\Users\User\Downloads\153957-806571952_small.mp4" type="Video">
+
+  </video>
+</body>
+</html>
